@@ -1,0 +1,10 @@
+<div class="dunder-border dunder-bottomless">
+    <h3 class="dunder-post-title">{{vm.thispost.title}}</h3>
+    <p class="dunder-post-body">{{vm.thispost.body}}</p>
+</div>
+<div ng-if="!done" class="dunder-border">
+    Loading...
+</div>
+<div ng-if="done" class="dunder-border dunder-bottom-margin dunder-comment-container"> 
+    <comment ng-repeat="comment in comments track by comment.id" thiscomment="comment"></comment>
+</div>

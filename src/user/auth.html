@@ -1,0 +1,24 @@
+<div class="auth">
+    <div ng-if="!done">
+        Loading...
+    </div>
+    <div ng-if="done">
+        <section class="centered">
+            <h1>Welcome to Dunder-Mifflin</h1>
+            <br/>
+            <p>Welcome to the dunder-mifflin internal network.</p>
+            <p>Please enter a username to view your posts and comments.</p>
+        </section>
+        <form role="form" name="authForm" class="form-padding" ng-submit="doSubmit(authForm)" novalidate>
+            <div class="error">
+                <span id="error" ng-if="error">{{error}}</span>
+            </div>
+            <section class="centered">
+                <div class="form-group">
+                    <input id="email" type="email" name="email" ng-model="email" placeholder="Email Address" class="full-width"> 
+                </div>
+                <button id="submit" class="btn btn-default full-width" type="submit">Login</button>
+            </section>
+        </form>
+    </div>
+</div>

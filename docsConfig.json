@@ -1,0 +1,5 @@
+{ 
+	"outputDir": "./docs/",
+	"contentDir": "./docs/",
+	"apiDir": "./src"
+}
